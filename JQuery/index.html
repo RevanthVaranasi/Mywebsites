@@ -1,0 +1,85 @@
+<html>
+<head>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <style>
+	  #circle{
+		height: 200px;
+		width: 200px;
+		background-color: aqua;
+		border-radius: 50%;
+	  }
+	  .button {
+ 	 border-radius: 4px;
+ 	 background-color: #f4511e;
+	border: none;
+ 	 color: #FFFFFF;
+  	text-align: center;
+ 	 font-size: 28px;
+ 	 padding: 20px;
+ 	 width: 200px;
+	  transition: all 0.5s;
+ 	 cursor: pointer;
+ 	 margin: 5px;
+		}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+	
+  </style>
+</head>
+<body>
+	<div id="circle"></div>
+	<p id="text">Hello this is a sample text</p>
+	<button class="button" id="but1"><span>Click me to fade out! </span></button>
+	<button class="button" id="but2"><span>Click me to fade in! </span></button>
+		<script>
+			$("#but1").click(function(){
+				$("#text").fadeOut();
+			});	
+			$("#but2").click(function(){
+				$("#text").fadeIn();
+			});	
+			$("#circle").on({
+				mouseenter: function(){
+					$("#circle").css("background-color","red");
+				},
+				click: function(){
+					$("#circle").animate({
+						width:"300px",
+						height:"300px",
+						borderRadius:"150px",
+						marginLeft:"50px"
+					},800);
+				}
+			});
+			
+
+		</script>		
+	
+</body>
+</html>

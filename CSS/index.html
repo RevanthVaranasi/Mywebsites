@@ -1,0 +1,187 @@
+<html>
+<head>
+
+		<script
+        src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+<style>
+body{
+	margin:0;
+	font-family:Arial,Helvetica,freesans,sans-serif;	
+}
+#topbar{
+	height:82px;
+	width:auto;
+	background-color:black;
+	color:white;
+}
+.fixeddiv{
+	width:1100px;
+	margin:0 auto;
+	}
+#bbcdiv{
+	padding-top:5px;
+	padding-left:2px;
+	float:left;
+	border:1px solid #232528
+}
+#signin{
+	padding:25px 0px 0 20px;
+	font-weight:bold;
+	font-size:1.5em;
+	border:1px solid #232528;
+	width:250px;
+	height:67%;
+	float:left;
+}
+#signin img{
+	position:relative;
+	top:7px;
+	left:1px;
+	padding-right:2px;
+	padding-left:5px;
+}
+#menulist{
+	float:left;
+}
+#menulist li{
+	float:left;
+	margin:0;
+	padding:25px;
+	border-right:1px solid #232528;
+}
+#menulist ul{
+	list-style:none;
+	font-family:Arial,Helvetica,freesans,sans-serif;
+	font-weight:bold;
+	font-size:1.5em;
+	float:left;
+	margin-top:0px;
+	padding:0px;
+	
+}
+#searchdiv{
+	float:left;
+	border:none;
+	width:10px;
+	padding-top:20px;
+	padding-right:1px;
+	padding-left:10px;
+}
+#searchdiv input{
+	padding:10px;
+	width:200px;
+	border:none;
+	color:red;
+	font-size:1.3em;
+	background-image:url("Users\Revanth\Desktop\MyWebsites\CSS\images\search.png");
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+.break{
+	clear:both;
+	
+}
+#miscbar{
+	background-color:#232528;
+	height:50px;
+	width:auto;
+	color:white;
+}
+#fixeddiv1{
+	width:1100px;
+	margin:0 auto;
+	padding-bottom:50px;
+}
+#miscbar p{
+	float:left;
+	margin:0;
+	padding:0;
+}
+#welcome{
+	font-size:2em;
+	color:red;
+}
+#rss{
+	float:right;
+	color:yellow;
+	position:relative;
+	left:750px;
+	top:10px;
+}
+#content{	
+	width:auto;
+}
+.headlinestyle{
+	color:blue;
+	font-size:1.3em; 
+	float:left;
+}
+#miscbartext{
+	position:relative;
+	bottom:15px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div id="topbar">
+	<div class="fixeddiv">
+	
+	<div id="bbcdiv">
+	<img src="C:\Users\Revanth\Desktop\MyWebsites\CSS\images\rev.png" />
+	</div>
+	
+	<div id="signin">
+		<img src="C:\Users\Revanth\Desktop\MyWebsites\CSS\images\signin.png" />Sign in
+		
+	</div>
+	
+	<div id="menulist">
+	<ul>
+		<li id="news">News</li>
+		<li>Games</li>
+		<li>Travel</li>
+		<li>Entertainment</li>
+		
+	</ul>
+	</div>
+	<div id="searchdiv">
+		<input type="text" placeholder="Search"/>
+	
+	</div>
+	</div>
+	<div class="break">
+</div>
+
+</div>
+
+
+<div id="miscbar">
+	<div id="fixeddiv1">
+	<p id="miscbartext"><span id="welcome">welcome</span> to my website</p>
+	<p id="rss">RSS</p>
+	<img src="">
+	</div>
+	
+
+</div>
+<div id="content">
+	<div class="fixeddiv">
+		<p class="headlinestyle">Welcome to revaix.com</p>
+		<p class="headlinestyle" style="float:right;">Friday, 29 September</p>
+	</div>
+</div>
+
+</div>
+<script>
+	$("#menulist news").click(function(){
+		$("#menulist news").css("background-color","red");
+	});
+
+</script>
+</body>
+</html>

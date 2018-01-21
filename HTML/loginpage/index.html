@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>Transparent login website form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBwKtU5Nyihz7yeivLqGq6OIdZ1lxLHMu4",
+    authDomain: "fir-webpractice.firebaseapp.com",
+    databaseURL: "https://fir-webpractice.firebaseio.com",
+    projectId: "fir-webpractice",
+    storageBucket: "fir-webpractice.appspot.com",
+    messagingSenderId: "281829196889"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+</head>
+<body>
+    <div class="login-box">
+        <img src="avatar.png" class="avatar">
+        <h1>Login here!</h1>
+        <form>
+            <p>Username</p>
+            <input type="text" id="uname" name="Username" placeholder="Enter UserName">
+            <p>Password</p>
+            <input type="password" id="pass" name="password" placeholder="Enter Password">
+            <input type="button" onclick="login()" name="submit" value="Login">
+            <a href="#">Forget password</a>
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>
