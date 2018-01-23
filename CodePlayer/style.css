@@ -1,0 +1,113 @@
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    height: 100%;
+    width: 100%;
+}
+
+#header{
+    height: 40px;
+    width: auto;
+    background-color: #eeeeee;
+    padding-bottom: 4px;
+    padding-top: 2px;
+    
+}
+
+#logoname{
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+    float: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 25px;
+    position: relative;
+    top: 5px; 
+}
+
+#menubar{
+    height: 40px;
+    width: 350px;
+    margin-left: 500px;
+    background-color:rgb(104, 98, 98);
+    border-radius: 10px;
+}
+
+#html{
+    width: 87.5px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    font-size: 1.2em;
+}
+
+#css{
+    width: 87.5px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    font-size: 1.2em;
+}
+
+#js{
+    width: 87.5px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    font-size: 1.2em;
+}
+
+#result{
+    width: 87.5px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    font-size: 1.2em;
+}
+
+#runbutton{
+    width: 60px;
+    height: 40px;
+    background-color: darkgray;
+    transition: background-color 1s;
+    position: relative;
+    left: 1150px;
+    bottom: 40px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    border-radius: 5px;
+}
+
+#runbutton:hover{
+    background-color: brown;
+}
+
+#bodypart{
+    height: 616px;
+    width: auto;
+    flex: 1;
+    overflow: auto;
+}
+
+.textpos{
+    position: relative;
+    top:15px;
+    left:15px;;
+}
